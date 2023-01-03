@@ -3,7 +3,7 @@ import React from 'react'
 function NavBarFormChild(props) {
     return (
         <div>
-            {props.showForm ? (
+            {props.isLoggedIn ? (
                 <form>
                     <label for="name">Name</label>
                     <input id="name"></input>

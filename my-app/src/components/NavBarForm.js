@@ -7,8 +7,8 @@ export class NavBarForm extends Component {
       super(props)
     
       this.state = {
-         isLoggedIn: true,
-         showForm: false,
+         isLoggedIn: false,
+
       }
     }
 
@@ -24,7 +24,6 @@ export class NavBarForm extends Component {
         <h1>Gallery</h1>
         <NavBarFormChild 
         isLoggedIn={this.state.isLoggedIn}
-        showForm={this.state.showForm}
         handleClick={this.handleClick}/>
       </div>
     )
